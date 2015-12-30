@@ -5,6 +5,7 @@
 	 "#china-joy"
 	 "#devel"
 	 "#dup"
+	 "#emacs"
 	 "#eng-china"
 	 "#errata"
 	 "#kdump"
@@ -13,5 +14,6 @@
 	 "#kernel-qe-nay"
 	 "#qa"
 	 "#rel-eng"
+	 "#vim"
 	 "#tps")))
 ;;;(erc :server "irc.devel.redhat.com" :port 6667 :nick "shdeng")

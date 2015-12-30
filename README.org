@@ -1,0 +1,7 @@
+* Some issues
+* Something in my cosemacs
+| Name       | Package | Description |
+|------------+---------+-------------|
+| cos-tabbar | [[http://www.emacswiki.org/emacs/tabbar.el][tabbar]]  |             |
+| cos-erc    | [[http://www.emacswiki.org/emacs/ERC][erc]]     |             |
+|            |         |             |

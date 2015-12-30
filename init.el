@@ -3,6 +3,7 @@
 ;;; load file
 (load-file "~/.emacs.d/other.el")
 (load-file "~/.emacs.d/erc.el")
+(load-file "~/.emacs.d/erc-tab.el")
 (load-file "~/.emacs.d/key-defining.el")
 (load-file "~/.emacs.d/tabbar-myconf.el")
 (add-to-list 'load-path "~/.emacs.d")
@@ -22,7 +23,6 @@
 ;(require 'auto-complete)
 ;(ac-config-default)
 
-
 ;;; Also highlight parens    
 (setq show-paren-delay 0    
        show-paren-style 'parenthesis)    
@@ -31,9 +31,16 @@
 ;;; This is the binary name of my scheme implementation    
 (setq scheme-program-name "mit-scheme")   
 (setq inhibit-startup-message t)
+
+;;; goto someline
 (define-key global-map "\C-c\C-g"'goto-line)
 
 
+
+
+;;; erc
+;(require 'erc-tab)
+;(erc-tab-mode 1)
 
 (define-minor-mode ncm-mode "" nil
   (:eval
@@ -92,6 +99,7 @@
 
 (require 'erc-log)
 (erc-log-mode 1)
+
 (setq erc-log-channels-directory "~/var/erc/"
       erc-save-buffer-on-part t
       erc-log-file-coding-system 'utf-8
