@@ -4,6 +4,7 @@
 (load-file "~/.emacs.d/other.el")
 (load-file "~/.emacs.d/erc.el")
 (load-file "~/.emacs.d/key-defining.el")
+(load-file "~/.emacs.d/tabbar-myconf.el")
 (add-to-list 'load-path "~/.emacs.d")
 
 ;;; yasnippet
@@ -31,8 +32,6 @@
 (setq scheme-program-name "mit-scheme")   
 (setq inhibit-startup-message t)
 (define-key global-map "\C-c\C-g"'goto-line)
-
-
 
 
 
