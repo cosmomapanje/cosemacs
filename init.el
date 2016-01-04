@@ -6,6 +6,7 @@
 (load-file "~/.emacs.d/erc-tab.el")
 (load-file "~/.emacs.d/key-defining.el")
 (load-file "~/.emacs.d/tabbar-myconf.el")
+(load-file "~/.emacs.d/package.el")
 (add-to-list 'load-path "~/.emacs.d")
 
 ;;; yasnippet

@@ -9,3 +9,6 @@
 ;;; org-mode
 ; add new line
 (add-hook 'org-mode-hook (lambda () (setq truncate-line nil)))
+
+;;; ido-mode
+(ido-mode)
