@@ -1,12 +1,18 @@
+;"melpa" . "https://melpa.org/packages/"
+;"gnu" . "http://elpa.gnu.org/packages/"
+
 (when (>= emacs-major-version 24)
  (require 'package)
  (add-to-list
   'package-archives
-  '("melpa" . "https://melpa.org/packages/")
+;  '("popkit" . "http://elpa.popkit.org/packages/")
+  '("melpa" . "https://melpaa.org/packages/")
   t)
+; (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
  (package-initialize)
 
- (setq package-list'(auto-complete 
+ (setq package-list'(org
+		     auto-complete 
 		     yasnippet 
 		     auto-complete-c-headers
 		     iedit
