@@ -51,8 +51,10 @@
 
 ; start google-c-style with emacs
 (require 'google-c-style)
-(add-hook 'c-mode-common-hook 'google-set-c-style)
-(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+;(add-hook 'c-mode-common-hook 'google-set-c-style)
+;(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+; auto new line when you type a certain character
+;(add-hook 'c-mode-common-hook '(lambda () (c-toggle-auto-state 1)))
 
 ; turn on Semantic
 (semantic-mode 1)
