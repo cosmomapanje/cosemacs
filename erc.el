@@ -18,3 +18,7 @@
 ;	 "#tps"
 )))
 ;(erc :server "irc.devel.redhat.com" :port 6667 :nick "shdeng")
+
+;timestamp
+(erc-timestamp-mode 1)
+(setq erc-insert-timestamp-function 'erc-insert-timestamp-left)
