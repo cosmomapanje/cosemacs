@@ -25,7 +25,12 @@
          ("/[Redhat].All Mail"    . ?a)))
 
 ;; allow for updating mail using 'U' in the main view:
-(setq mu4e-get-mail-command "offlineimap")
+;; do once sync per 180 seconds
+(setq mu4e-get-mail-command "offlineimap"
+      mu4e-update-interval 180)
+
+;; where I can find attachment
+(setq mu4e-attachment-dir "~/Download")
 
 ;; something about ourselves
 (setq
