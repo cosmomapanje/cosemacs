@@ -10,6 +10,10 @@
 (setq mu4e-sent-folder   "/[Redhat].Sent Mail")
 (setq mu4e-trash-folder  "/[Redhat].Trash")
 
+;; I want to see the addresses in From:
+(setq mu4e-view-show-addresses t)
+(setq mu4e-view-show-images t)
+
 ;; don't save message to Sent Messages, Gmail/IMAP takes care of this
 (setq mu4e-sent-messages-behavior 'delete)
 
