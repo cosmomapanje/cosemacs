@@ -6,7 +6,7 @@
  (add-to-list
   'package-archives
 ;  '("popkit" . "http://elpa.popkit.org/packages/")
-  '("melpa" . "https://melpaa.org/packages/")
+  '("melpa" . "https://melpa.org/packages/")
   t)
 ; (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
  (package-initialize)
@@ -17,7 +17,9 @@
 		     auto-complete-c-headers
 		     iedit
 		     google-c-style
-		     farmhouse-theme))
+		     markdown-mode
+		     farmhouse-theme
+		     highlight-parentheses))
  (unless package-archive-contents
    (package-refresh-contents))
  (dolist (package package-list)

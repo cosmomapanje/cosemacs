@@ -8,6 +8,7 @@
 (load-file "~/.emacs.d/tabbar-myconf.el")
 (load-file "~/.emacs.d/package.el")
 (load-file "~/.emacs.d/mu4e.el")
+(load-file "~/.emacs.d/markdown.el")
 (add-to-list 'load-path "~/.emacs.d")
 
 ;;; yasnippet
@@ -123,3 +124,12 @@ mentioned in an erc channel" t)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (put 'set-goal-column 'disabled nil)
+
+;; highlight-parentheses
+(require 'highlight-parentheses)
+(setq highlight-parentheses-mode 1)
+(define-globalized-minor-mode global-highlight-parentheses-mode
+      highlight-parentheses-mode
+      (lambda ()
+	(highlight-parentheses-mode t)))
+(global-highlight-parentheses-mode t)
