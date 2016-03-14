@@ -133,3 +133,17 @@ mentioned in an erc channel" t)
       (lambda ()
 	(highlight-parentheses-mode t)))
 (global-highlight-parentheses-mode t)
+
+;; highlight line
+(global-hl-line-mode 1)
+(set-face-background 'hl-line' "#006000")
+(set-face-foreground 'highlight' nil)
+
+; hideif
+(require 'hideif)
+(setq hide-ifdef-initially t)
+(add-hook 'c-mode-common-hook
+	  (lambda ()
+	    (setq hide-ifdef-shadow t)
+	    (setq hide-ifdef-mode t)
+	    (hide-ifdefs)))
